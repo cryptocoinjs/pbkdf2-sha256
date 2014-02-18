@@ -7,6 +7,8 @@ pbkdf2-sha256
 Why?
 ----
 
+This is useful for the [Scrypt](http://en.wikipedia.org/wiki/Scrypt) algorithm.
+
 Why not just use the Node.js `pbkdf2` function? The Node.js `pbkdf2` function uses the `sha1` algorithm and not the `sha256` algorithm for its pseudorandom function. This will change when Node v0.12 is released. Until then, this is the next best option.
 
 
@@ -35,6 +37,7 @@ Credits
 -------
 
 Based upon the following code https://github.com/cheongwy/node-scrypt-js/blob/master/lib/pbkdf2.js which is based upon https://github.com/wg/scrypt/blob/master/src/main/java/com/lambdaworks/crypto/PBKDF.java
+
 
 
 License
