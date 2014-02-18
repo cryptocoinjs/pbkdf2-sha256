@@ -1,2 +1,4 @@
 CHANGELOG.md
 test/
+test-browser.js
+Makefile
