@@ -1,3 +1,7 @@
+0.1.1 /2014-02-18
+-----------------
+- fixed typo in `package.json` `main` field
+
 0.1.0 / 2014-02-18
 ------------------
 - replaced legacy `sha256` JavaScript module with Node.js `sha256` module (increased performance by more than 50%)
