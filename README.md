@@ -1,0 +1,64 @@
+pbkdf2-sha256
+=============
+
+`pbkdf2-sha256` is a JavaScript implementation of [PBKDF2](http://en.wikipedia.org/wiki/PBKDF2) using the SHA256 HMAC. It's fully compatible with Node.js and the browser (via Browserify).
+
+
+Why?
+----
+
+Why not just use the Node.js `pbkdf2` function? The Node.js `pbkdf2` function uses the `sha1` algorithm and not the `sha256` algorithm for its pseudorandom function. This will change when Node v0.12 is released. Until then, this is the next best option.
+
+
+
+Usage
+-----
+
+### Installation
+
+    npm install --save pbkdf2-sha256
+
+### Example
+
+```js
+var pbkdf2 = require('pbkdf2-sha256');
+
+var key = 'passwd';
+var salt = new Buffer('salt');
+var res = pbkdf2(key, salt, 1, 64);
+console.log(res.toString('hex')) // => 55ac046e56e3089fec1691c22544b605f94185216dde0465e68b9d57c20dacbc49ca9cccf179b645991664b39d77ef317c71b845b1e30bd509112041d3a19783
+```
+
+
+
+Credits
+-------
+
+Based upon the following code https://github.com/cheongwy/node-scrypt-js/blob/master/lib/pbkdf2.js which is based upon https://github.com/wg/scrypt/blob/master/src/main/java/com/lambdaworks/crypto/PBKDF.java
+
+
+License
+-------
+
+MIT License
+
+Copyright (c) 2014, JP Richardson
+Copyright (c) 2010-2011 Intalio Pte, All Rights Reserved
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

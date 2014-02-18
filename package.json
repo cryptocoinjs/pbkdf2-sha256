@@ -1,0 +1,18 @@
+{
+  "name": "pbkdf2-sha256",
+  "version": "0.0.0",
+  "description": "pbkdf2-sha256 is a PBDKF2 implementation using HMAC SHA256",
+  "main": "./lib/pbdkf2.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "JP Richardson <jprichardson@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "terst": "0.0.1",
+    "mocha": "*"
+  }
+}
