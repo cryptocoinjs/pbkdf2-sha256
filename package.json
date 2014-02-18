@@ -2,7 +2,7 @@
   "name": "pbkdf2-sha256",
   "version": "0.1.0",
   "description": "pbkdf2-sha256 is a PBDKF2 implementation using HMAC SHA256",
-  "main": "./lib/pbdkf2.js",
+  "main": "./lib/pbkdf2.js",
   "scripts": {
     "test": "mocha test"
   },

@@ -1,7 +1,7 @@
 var pbkdf2 = null
 
 if (typeof module != 'undefined' && module.exports) {
-  pbkdf2 = require('../lib/pbkdf2');
+  pbkdf2 = require('../');
   require('terst');
 } else {
   pbkdf2 = window.prf; //<-- browserify "standalone" option
