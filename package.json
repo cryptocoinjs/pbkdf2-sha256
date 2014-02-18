@@ -10,7 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "terst": "0.0.1",
-    "mocha": "*"
+    "mocha": "~1.17.1",
+    "browserify": "~3.30.1"
   },
   "keywords": [
     "pbkdf2",
@@ -19,5 +20,9 @@
     "crypto",
     "cryptography",
     "scrypt"
-  ]
+  ],
+  "repository": {
+    "url": "git@github.com:cryptocoinjs/pbkdf2-sha256.git",
+    "type": "git"
+  }
 }
