@@ -32,9 +32,18 @@ console.log(res.toString('hex')) // => 55ac046e56e3089fec1691c22544b605f94185216
 ```
 
 
+Misc
+----
 
-Credits
--------
+### Alternative Implementations
+
+- https://github.com/bitwiseshiftleft/sjcl/blob/master/core/pbkdf2.js (Stanford JavaScript Crypto Library)
+- https://code.google.com/p/crypto-js/source/browse/tags/3.1.2/src/pbkdf2.js (CryptoJS)
+
+Why didn't I use either one of these? They're not Node.js optimized. They also don't use native types, so they'll be slower in the browser.
+
+
+### Credits
 
 Based upon the following code https://github.com/cheongwy/node-scrypt-js/blob/master/lib/pbkdf2.js which is based upon https://github.com/wg/scrypt/blob/master/src/main/java/com/lambdaworks/crypto/PBKDF.java
 
