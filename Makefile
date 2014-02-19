@@ -1,8 +1,8 @@
-test-node:
+node-test:
 	@mocha 
 
-test-browser:
-	@node test-browser.js & echo "$$!" > /tmp/pbkdf2-sha256-browser-test.pid
+browser-test:
+	@node browser-test.js & echo "$$!" > /tmp/pbkdf2-sha256-browser-test.pid
 	@sleep 1
 	@open http://localhost:8080
 
