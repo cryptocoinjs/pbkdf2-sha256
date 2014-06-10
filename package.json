@@ -10,7 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "mocha": "~1.17.1",
-    "browserify": "~3.30.1"
+    "browserify": "~3.30.1",
+    "mochify": "^0.4.2"
   },
   "keywords": [
     "pbkdf2",

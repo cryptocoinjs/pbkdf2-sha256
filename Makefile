@@ -1,11 +1,9 @@
+test: node-test browser-test
+
 node-test:
-	@mocha 
+	@./node_modules/.bin/mocha 
 
 browser-test:
-	@node browser-test.js & echo "$$!" > /tmp/pbkdf2-sha256-browser-test.pid
-	@sleep 1
-	@open http://localhost:8080
+	@./node_modules/.bin/mochify --wd -R spec
 
-kill: #if test-browser fails, you'll want to call this
-	@cat /tmp/pbkdf2-sha256-browser-test.pid | xargs kill
-	@rm /tmp/pbkdf2-sha256-browser-test.pid
+.PHONY: node-test browser-test
