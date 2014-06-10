@@ -92,5 +92,15 @@
 			"description": "empty salt"
 		}
 	],
-  "invalid": []
+  "invalid": [
+    {
+      "key": "password",
+      "salt": "afas",
+      "iterations": 1024,
+      "keylen": 35184372088832,
+      "result": "",
+      "skip": false,
+      "description": "key length too long"
+    }
+  ]
 }
