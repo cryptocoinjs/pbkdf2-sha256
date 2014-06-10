@@ -1,7 +1,12 @@
 pbkdf2-sha256
 =============
 
-`pbkdf2-sha256` is a JavaScript implementation of [PBKDF2](http://en.wikipedia.org/wiki/PBKDF2) using the SHA256 HMAC. It's fully compatible with Node.js and the browser (via Browserify).
+[![build status](https://secure.travis-ci.org/cryptocoinjs/coinkey.png)](http://travis-ci.org/cryptocoinjs/coinkey)
+[![Coverage Status](https://img.shields.io/coveralls/cryptocoinjs/coinkey.svg)](https://coveralls.io/r/cryptocoinjs/coinkey)
+[![Version](http://img.shields.io/npm/v/coinkey.svg)](https://www.npmjs.org/package/coinkey)
+
+
+`pbkdf2-sha256` is a JavaScript implementation of [PBKDF2](http://en.wikipedia.org/wiki/PBKDF2) using the SHA256 HMAC. It's useful as the [Scrypt](http://en.wikipedia.org/wiki/Scrypt) algorithm uses this.  It's fully compatible with Node.js and the browser (via Browserify).
 
 
 Why?
