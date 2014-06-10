@@ -1,3 +1,7 @@
+1.0.0 / 2014-06-09
+------------------
+- moved tests to fixtures
+
 0.1.1 /2014-02-18
 -----------------
 - fixed typo in `package.json` `main` field
