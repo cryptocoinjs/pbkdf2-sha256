@@ -1,6 +1,7 @@
 1.0.0 / 2014-06-09
 ------------------
 - moved tests to fixtures
+- removed dev dep `terst` for `assert`
 
 0.1.1 /2014-02-18
 -----------------

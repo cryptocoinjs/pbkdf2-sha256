@@ -9,7 +9,6 @@
   "author": "JP Richardson <jprichardson@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "terst": "0.0.1",
     "mocha": "~1.17.1",
     "browserify": "~3.30.1"
   },

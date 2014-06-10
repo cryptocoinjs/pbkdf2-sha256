@@ -1,5 +1,4 @@
 var assert = require('assert')
-var terst = require('terst')
 var pbkdf2 = require('../')
 
 var fixtures = require('./fixtures/pbkdf2')
@@ -18,7 +17,7 @@ describe('pbkdf2', function() {
       }
 
       var res = pbkdf2(key, salt, f.iterations, f.keylen)
-      EQ (res.toString('hex'), f.result)
+      assert.equal(res.toString('hex'), f.result)
     })
   })
 })
