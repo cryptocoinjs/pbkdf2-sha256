@@ -3,9 +3,6 @@
   "version": "0.1.1",
   "description": "pbkdf2-sha256 is a PBDKF2 implementation using HMAC SHA256",
   "main": "./lib/pbkdf2.js",
-  "scripts": {
-    "test": "mocha test"
-  },
   "author": "JP Richardson <jprichardson@gmail.com>",
   "license": "MIT",
   "devDependencies": {
@@ -30,5 +27,11 @@
   },
   "browser": {
     "crypto": "crypto-browserify"
-  }
+  },
+  "scripts": {
+    "test": "mocha --ui bdd",
+    "unit": "./node_modules/.bin/mocha",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter list test/*.js",
+    "coveralls": "npm run-script coverage && node ./node_modules/.bin/coveralls < coverage/lcov.info"
+  },
 }
