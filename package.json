@@ -11,7 +11,8 @@
   "devDependencies": {
     "mocha": "~1.17.1",
     "browserify": "~3.30.1",
-    "mochify": "^0.4.2"
+    "mochify": "^0.4.2",
+    "crypto-browserify": "^2.1.8"
   },
   "keywords": [
     "pbkdf2",
@@ -24,5 +25,8 @@
   "repository": {
     "url": "git@github.com:cryptocoinjs/pbkdf2-sha256.git",
     "type": "git"
+  },
+  "browser": {
+    "crypto": "crypto-browserify"
   }
 }

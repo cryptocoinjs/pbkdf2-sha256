@@ -3,7 +3,7 @@
 - moved tests to fixtures
 - removed dev dep `terst` for `assert`
 - removed semicolons per http://cryptocoinjs.com/about/contributing/#semicolons
--
+- added `crypto-browserify` for `crypto` dev dep (use with Browserify)
 
 0.1.1 /2014-02-18
 -----------------

@@ -72,6 +72,24 @@
 			"result": "89b69d0516f829893c696226650a8687",
 			"skip": false,
 			"description": "http://stackoverflow.com/questions/5130513/pbkdf2-hmac-sha2-test-vectors/5136918#5136918 Test Vector #6"
+		},
+		{
+			"key": "",
+			"salt": "salt",
+			"iterations": 1024,
+			"keylen": 32,
+			"result": "9e83f279c040f2a11aa4a02b24c418f2d3cb39560c9627fa4f47e3bcc2897c3d",
+			"skip": false,
+			"description": "empty key"
+		},
+		{
+			"key": "password",
+			"salt": "",
+			"iterations": 1024,
+			"keylen": 32,
+			"result": "ea5808411eb0c7e830deab55096cee582761e22a9bc034e3ece925225b07bf46",
+			"skip": false,
+			"description": "empty salt"
 		}
 	]
 }
