@@ -91,5 +91,6 @@
 			"skip": false,
 			"description": "empty salt"
 		}
-	]
+	],
+  "invalid": []
 }
