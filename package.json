@@ -30,6 +30,7 @@
     "crypto": "crypto-browserify"
   },
   "scripts": {
+    "browser-test": "./node_modules/.bin/mochify  --wd -R spec -t 7000",
     "test": "./node_modules/.bin/mocha --ui bdd",
     "unit": "./node_modules/.bin/mocha",
     "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter list test/*.js",
