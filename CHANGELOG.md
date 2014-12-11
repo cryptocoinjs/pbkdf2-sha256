@@ -1,3 +1,7 @@
+1.1.0 / 2014-12-11
+------------------
+- removed `browserify` and `crypto-browserify` from `devDependencies`
+
 1.0.1 / 2014-06-09
 ------------------
 - small readme update

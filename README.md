@@ -8,6 +8,6 @@ pbkdf2-sha256
 
 `pbkdf2-sha256` is a JavaScript implementation of [PBKDF2](http://en.wikipedia.org/wiki/PBKDF2) using the SHA256 HMAC. It's useful as the [Scrypt](http://en.wikipedia.org/wiki/Scrypt) algorithm uses this.  It's fully compatible with Node.js and the browser (via Browserify).
 
-Official documenation:
+### Official documenation:
 
 http://cryptocoinjs.com/modules/crypto/pbkdf2-sha256/
