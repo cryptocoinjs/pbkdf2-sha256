@@ -2,3 +2,4 @@ test/
 test-browser.js
 Makefile
 .travis.yml
+.min-wd
