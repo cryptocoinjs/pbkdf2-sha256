@@ -12,7 +12,7 @@
     "istanbul": "^0.2.11",
     "mocha": "^2.0.1",
     "mocha-lcov-reporter": "0.0.1",
-    "mochify": "^0.4.2"
+    "mochify": "^2.1.0"
   },
   "keywords": [
     "pbkdf2",
