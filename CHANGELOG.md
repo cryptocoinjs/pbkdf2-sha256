@@ -1,3 +1,7 @@
+1.1.1 / 2015-09-28
+------------------
+- if key is `string`, handle as utf8. See: https://github.com/cryptocoinjs/pbkdf2-sha256/pull/2
+
 1.1.0 / 2014-12-11
 ------------------
 - removed `browserify` and `crypto-browserify` from `devDependencies`
