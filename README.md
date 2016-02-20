@@ -11,3 +11,7 @@ pbkdf2-sha256
 ### Official documenation:
 
 http://cryptocoinjs.com/modules/crypto/pbkdf2-sha256/
+
+### Status
+
+Package is **deprecated**. Please use [pbkdf2](https://www.npmjs.com/package/pbkdf2) ([github](https://github.com/crypto-browserify/pbkdf2)).
